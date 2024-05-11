@@ -6,14 +6,14 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import jQuery from "jquery";
 import jsdom from"jsdom"
-
+import { hey } from "./script";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const port = 3000;
 const app = express();
 
 
-const apiKey = "50f7877f4da35ee50991c11f2e909760"
+const apiKey = process.env.APIKEY
 
 
 // const url =     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`
