@@ -40,7 +40,7 @@
         border-radius: 3px;
     }
 
-    input[type="submit"] {
+    #submit {
         background-color: #4CAF50;
         color: white;
         padding: 10px 20px;
@@ -49,25 +49,40 @@
         cursor: pointer;
     }
 
-    input[type="submit"]:hover {
+    #submit:hover {
         background-color: #45a049;
     }
 </style>
 </head>
 <body>
 
-<h2>Enter Address</h2>
+<h2>Enter City or ZipCode</h2>
 
-<form action="/mylocation" method="post">
+<form action="" method="post">
 
-    <label for="city">City:</label><br>
+    <label for="city">City Or ZipCode:</label><br>
     <input type="text" id="city" name="city"><br>
-    <label for="country">Country:</label><br>
-    <input type="text" id="country" name="country"><br>
+
   
-    <input type="submit" value="Submit">
+    <button id="submit" type="submit" value="Submit">Submit</button>
 </form>
 <p id="results"></p>
+
+
+<div id ='seeWeather' >
+
+
+    <h2>City</h2>
+    <p id="City"></p><br>
+  <h2>Temperature</h2>
+    <p id="Temperature"></p><br>
+  <h2>Wind</h2>
+    <p id="wind"></p><br>
+  <h2>Clouds</h2>
+    <p id="clouds"></p><br>
+  
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="script.js">
 </script>
